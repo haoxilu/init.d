@@ -1,0 +1,12 @@
+echo "Install Mycat"
+echo "---------------------------------------------------------------------------"
+wget http://dl.mycat.io/1.6-RELEASE/Mycat-server-1.6-RELEASE-20161028204710-linux.tar.gz
+tar zxvf Mycat-server-1.6-RELEASE-20161028204710-linux.tar.gz && mv mycat .mycat
+rm Mycat-server-1.6-RELEASE-20161028204710-linux.tar.gz
+
+echo 'export PATH="$HOME/.mycat/bin:$PATH"' >> ~/.bashrc
+exec $SHELL
+command . ~/.bashrc
+
+mycat status
+echo "--------------------------- Install Successed -----------------------------"
