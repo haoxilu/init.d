@@ -6,6 +6,7 @@ rm Mycat-server-1.6-RELEASE-20161028204710-linux.tar.gz
 
 echo 'export PATH="$HOME/.mycat/bin:$PATH"' >> ~/.bashrc
 exec $SHELL
+
 command . ~/.bashrc
 
 mycat status
