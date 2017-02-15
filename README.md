@@ -21,6 +21,7 @@ Batch scripts for Ruby production environment install on Ubuntu Server.
 Install packages first
 
 ```bash
+curl -sSL https://git.io/vDX0J | bash # mirror china
 sudo apt-get update
 sudo apt-get install -y curl
 curl -sSL https://git.io/vVHhe | bash
@@ -31,43 +32,62 @@ curl -sSL https://git.io/vVHhe | bash
 Nginx [official package](http://nginx.org/packages/ubuntu/)
 
 ```bash
-curl -sSL https://git.io/vVHhf | bash
+curl -sSL https://git.io/vDX0L | bash
+```
+
+### Install Rbenv + Ruby
+
+```bash
+curl -sSL https://git.io/vXBW1 | bash
 ```
 
 ### Install RVM + Ruby
 
 ```bash
-curl -sSL https://git.io/vVHhJ | bash
+curl -sSL https://git.io/vXBzD | bash
 ```
 
 Use Ruby China mirror site for RubyGems and Ruby:
 
 ```
-MIRROR=1 curl -sSL https://git.io/vVHhJ | bash
+MIRROR=1 curl -sSL https://git.io/vXBzD | bash
 ```
 
 ### Install MongoDB
 
 ```bash
-curl -sSL https://git.io/vVHhT | bash
+curl -sSL https://git.io/vDX03 | bash
 ```
 
 ### Install Redis
 
 ```bash
-curl -sSL https://git.io/vVHhk | bash
+curl -sSL https://git.io/vDX0G | bash
 ```
 
 ### Install ElasticSearch
 
 ```bash
-curl -sSL https://git.io/vVHhm | bash
+curl -sSL https://git.io/vDX0n | bash
 sudo service elasticsearch status
 ```
 
-## Install Docker
+### Install Docker
 
 ```bash
-curl -sSL https://git.io/vPypp | bash
+curl -sSL https://git.io/vDX0W | bash
 sudo docker info
+```
+
+### Install Mycat
+
+```bash
+curl -sSL https://git.io/vDX08 | bash
+mycat status
+```
+
+### Install Haproxy
+
+```bash
+curl -sSL https://git.io/vDX0E | bash
 ```
